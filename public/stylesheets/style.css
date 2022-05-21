@@ -1,20 +1,54 @@
+:root {
+  --primary: #ccdad1;
+  --secondary: #9caea9;
+  --tertiary: #788585;
+  --light-dark: #6f6866;
+  --dark: #38302e;
+  --border-radius: .3rem;
+}
+
 * {
   box-sizing: border-box;
 }
 
+.post-box {
+  border: var(--dark), 10px, solid;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.hero {
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
+.app-title {
+  font-size: 3rem;
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 6px 5px var(--light-dark);
+}
+
 body, html {
   height: 100%;
-  padding: 0;
+  background-color: var(--primary);
   margin: 0;
-  font-family: sans-serif;
-  color: #333;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: var(--primary);
   font-weight: bold;
   transition: color .1s;
+  padding-right: 10px;
 }
 
 a:hover {
@@ -34,6 +68,10 @@ button {
 
 button:hover {
   background-color: #3486eb;
+}
+
+li {
+  list-style-type: none;
 }
 
 .post-list {
@@ -97,7 +135,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: var(--primary);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -125,7 +163,11 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: var(--primary);
+}
+
+.title {
+  background-color: var(--dark);
 }
 
 .edit-link {
