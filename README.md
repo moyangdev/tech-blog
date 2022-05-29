@@ -71,6 +71,7 @@ A link to the [code](https://github.com/moyangdev/tech-blog):
 ```
 https://github.com/moyangdev/tech-blog
 ```
-A link to the deployed [application]():
+A link to the deployed [application](https://tranquil-meadow-73235.herokuapp.com/):
 ```
+https://tranquil-meadow-73235.herokuapp.com/
 ```
